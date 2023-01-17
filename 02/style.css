@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bg-color: #d9cdf7;
+  --text-color: #271a45;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+}
+
+body * {
+  color: var(--text-color);
+  font-family: "Lato", sans-serif;
+  line-height: 100%;
+}
+
+#btn-close,
+#animated {
+  display: none;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+}
+
+#product-image {
+  position: relative;
+}
+
+#product-image button {
+  position: absolute;
+  right: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+html.animated button#btn-360,
+html.animated img#static {
+  display: none;
+}
+
+html.animated button#btn-close,
+html.animated img#animated {
+  display: initial;
+}
+
+#product-image > img {
+  width: 449px;
+  height: 222px;
+  object-fit: cover;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+h1 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  font-size: 32px;
+
+  margin-top: 12px;
+}
+
+p {
+  margin-top: 12px;
+  opacity: 0.67;
+}
+
+#product-details button {
+  font-size: 12px;
+  line-height: 16px;
+
+  padding: 8px 16px;
+  border: 0.5px solid var(--text-color);
+  border-radius: 999px;
+
+  background-color: transparent;
+
+  margin-top: 20px;
+}
