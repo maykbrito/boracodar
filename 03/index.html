@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botões e Cursores</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Teste os botões</h1>
+      <p>
+        Interaja com os botões e observe a mudança de aparência e de cursores
+      </p>
+
+      <div class="buttons">
+        <button class="primary" onclick="loading(event)">
+          interaja comigo</button>
+        <button class="secondary">interaja comigo</button>
+        <button class="tertiary movable">
+          <i class="ph-list"></i>
+          interaja comigo</button>
+      </div>
+    </div>
+
+    <script>
+      function loading(event) {
+        const button = event.currentTarget
+        button.classList.add('loading')
+        const text = button.textContent
+        button.innerHTML = `
+        <i class="ph-circle-notch"></i>
+        ${text}
+        `
+      }
+    </script>
+  </body>
+</html>
