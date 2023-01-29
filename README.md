@@ -32,5 +32,11 @@ Projetos #boraCodar da Rocketseat
                 <td>25/01/23</td>
                 <td><a href="03">🔗</a></td>
             </tr>
+            <tr>
+                <td>04</td>
+                <td>Chat</td>
+                <td>01/02/23</td>
+                <td><a href="04">🔗</a></td>
+            </tr>
         </tbody>
     </table>

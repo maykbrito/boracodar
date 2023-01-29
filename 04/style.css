@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  background-color: #1a1924;
+  font-size: 1.6rem;
+  color: #e1e1e6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body * {
+  /* border: 0.1rem solid red; */
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  padding: 2.4rem 3.2rem;
+
+  height: 100vh;
+  width: 100vw;
+  max-width: 880px;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  margin: auto;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#user-info {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#user-info img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#user-status .status {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+
+  margin-top: 0.4rem;
+}
+
+#user-status .status::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  background-color: #00b37e;
+  border-radius: 50%;
+}
+
+#user-status .status {
+  color: #00b37e;
+  font-size: 1.2rem;
+}
+
+#last-seen {
+  margin-top: 2.6rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+#messages {
+  overflow-y: scroll;
+  padding-bottom: 2.4rem;
+}
+
+#messages::-webkit-scrollbar {
+  display: none;
+}
+
+.messages {
+  margin-top: 3rem;
+  display: grid;
+  gap: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.message .body {
+  width: fit-content;
+  margin-top: 1rem;
+  background-color: #633bbc;
+  padding: 1.4rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+}
+
+.message:not(.you) {
+  width: 40vw;
+}
+
+.message.you {
+  margin-left: auto;
+}
+
+.message.you .top {
+  text-align: right;
+}
+
+.message.you .body {
+  background-color: #07847e;
+  border-radius: 0.8rem 0.8rem 0 0.8rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  background: #282843;
+  border-radius: 999rem;
+  padding: 1.4rem 2.4rem;
+}
+
+input {
+  flex: 1;
+  outline: none;
+  color: #e1e1e6;
+}
+
+form:focus-within {
+  outline: 2px solid white;
+}
+
+input::placeholder {
+  color: #e1e1e6;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+button i {
+  color: #e1e1e6;
+  font-size: 2.4rem;
+}
+
+input,
+button {
+  background-color: transparent;
+  border: 0;
+}
