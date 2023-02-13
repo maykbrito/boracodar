@@ -10,6 +10,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "files.autoSave": "afterDelay",
+  "editor.tabCompletion": "on",
 
   // explorer
   "explorer.compactFolders": false,

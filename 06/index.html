@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="boarding-pass">
+      <h1>Cartão de embarque</h1>
+      <main id="ticket">
+        <section class="top grid">
+          <div class="flight grid column">
+            <div class="number">
+              <p>Voo</p>
+              <strong>RS995</strong>
+            </div>
+            <div class="date text-right">
+              <p>Data</p>
+              <strong>23/05/2023</strong>
+            </div>
+          </div>
+          <div class="grid column">
+            <div class="departure grid">
+              <p>São Paulo, Brasil</p>
+              <strong>GRU</strong>
+              <time>17:00</time>
+            </div>
+            <div class="airplane grid">
+              <img src="./assets/ion_airplane.svg" alt="ícone de um avião" />
+            </div>
+            <div class="arrival text-right grid">
+              <p>São Francisco, EUA</p>
+              <strong>SFO</strong>
+              <time>04:48 <sup>+1</sup></time>
+            </div>
+          </div>
+        </section>
+        <section class="middle grid column">
+          <div class="name">
+            <p>Passageiro</p>
+            <strong>Rodrigo Terron</strong>
+          </div>
+          <div class="seat text-right">
+            <p>Assento</p>
+            <strong>28A</strong>
+          </div>
+        </section>
+        <section class="bottom">
+          <div class="container grid column">
+            <dl class="grid">
+              <dt>
+                <p>Embarque</p>
+                <time>16:15</time>
+              </dt>
+              <dt>
+                <p>Terminal</p>
+                <strong>2</strong>
+              </dt>
+              <dt>
+                <p>Portão</p>
+                <strong>15</strong>
+              </dt>
+            </dl>
+
+            <div class="qrcode grid">
+              <img src="./assets/qr-code.png" alt="imagem de um qrcode" />
+              <p>Grupo de embarque: 3</p>
+            </div>
+          </div>
+          <p><strong>Atenção:</strong> o portão fecha 16:45</p>
+        </section>
+      </main>
+      <footer>
+        Qualquer problema procure o balcão de atendimento da sua companhia aérea
+      </footer>
+    </div>
+  </body>
+</html>

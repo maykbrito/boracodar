@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) no-repeat
+    fixed;
+
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.column {
+  grid-auto-flow: column;
+}
+
+.text-right {
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+  text-align: right;
+}
+
+h1,
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.64);
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+strong {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+section {
+  padding: 2.4rem 3.2rem;
+
+  background-color: white;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+#boarding-pass {
+  margin: auto;
+}
+
+#ticket {
+  margin-top: 2rem;
+}
+
+.top {
+  border-radius: 2.4rem 2.4rem 0 0;
+  gap: 2.4rem;
+
+  --mask: radial-gradient(1.2rem at 1.2rem bottom, #0000 93%, black) -1.2rem;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+}
+
+.departure,
+.arrival {
+  width: 12.5rem;
+}
+
+.departure strong,
+.arrival strong {
+  font-size: 4rem;
+  line-height: 4.7rem;
+}
+
+.airplane {
+  align-self: center;
+}
+
+.top time {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.top time sup {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.middle {
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+  border-left: 0;
+  border-right: 0;
+
+  --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, #0000 93%, black) -1.2rem -1.2rem;
+}
+
+.bottom {
+  border-radius: 0 0 2.4rem 2.4rem;
+
+  --mask: radial-gradient(1.2rem at 1.2rem top, #0000 93%, black) -1.2rem;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+}
+
+.bottom .container {
+  align-items: center;
+  gap: 0.8rem;
+}
+
+dl.grid {
+  gap: 1.6rem;
+  min-width: 9.5rem;
+}
+
+dt time {
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  background: #633bbc;
+  border-radius: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+.bottom > p {
+  text-align: center;
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.qrcode.grid {
+  justify-items: center;
+}
+
+footer {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: white;
+  opacity: 0.64;
+  width: 27rem;
+  text-align: center;
+  margin: 2rem auto;
+}
