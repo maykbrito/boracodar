@@ -17,7 +17,7 @@
 <br>
 
 <p align="center">
-  <img rc=".github/preview.jpg" width="100%">
+  <img src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
