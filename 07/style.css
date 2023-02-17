@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto";
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  text-transform: uppercase;
+  cursor: pointer;
+
+  padding: 0.4rem 2.4rem;
+  border-radius: 0.5rem;
+}
+
+.primary {
+  background: #6246ea;
+
+  color: #ffffff;
+  transition: background 200ms;
+}
+
+.primary:hover {
+  background: #523dbe;
+  color: white;
+}
+
+.secondary {
+  color: #6246ea;
+}
+
+.secondary:hover {
+  background-color: #6246ea;
+  color: white;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+input,
+select,
+button {
+  font-family: "Roboto";
+  all: unset;
+}
+
+header {
+  min-height: 53.2rem;
+  background-color: #f8f8ff;
+
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  place-content: center;
+}
+
+header::before {
+  content: "";
+  background-image: url(./assets/bg-header-top.svg);
+  width: 40.7rem;
+  height: 34.5rem;
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+header::after {
+  content: "";
+  background-image: url(./assets/bg-header-bottom.svg);
+  width: 41.4rem;
+  height: 33rem;
+
+  position: absolute;
+  right: 0;
+  bottom: -1.2rem;
+}
+
+header .content {
+  width: fit-content;
+
+  position: relative;
+  z-index: 1;
+}
+
+header .content .top {
+  text-align: center;
+}
+
+header p {
+  font-weight: 500;
+  line-height: 160%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #e45858;
+}
+
+header h1 {
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: #121214;
+  max-width: 64.7rem;
+  margin: 1.8rem auto 0;
+}
+
+header h1 span {
+  color: #6246ea;
+}
+
+form {
+  margin-top: 4rem;
+
+  display: flex;
+  padding: 4rem;
+  gap: 2.4rem;
+
+  background: #ffffff;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  background: #f4f4ff;
+  border-radius: 0.5rem;
+  padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+}
+
+input,
+select {
+  color: #7c7c8a;
+  min-width: 29rem;
+}
+
+.search-field i {
+  color: #e45858;
+  font-size: 2.4rem;
+}
+
+select,
+.select {
+  position: relative;
+}
+
+select {
+  z-index: 1;
+}
+
+.select i.ph-caret-down-light {
+  position: absolute;
+  right: 1rem;
+  z-index: 0;
+  color: #858793;
+}
+
+form button.btn {
+  padding: 1.2rem 3.2rem;
+}
+
+main > .content {
+  max-width: 121.6rem;
+  margin: 10rem auto;
+}
+
+section.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.top .view {
+  display: flex;
+  padding: 0.8rem;
+
+  border: 0.1rem solid #eaeaea;
+  border-radius: 0.6rem;
+}
+
+section.cards {
+  margin-top: 4rem;
+
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: #ffffff;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+  max-width: 38.4rem;
+  overflow: hidden;
+}
+
+.card .content {
+  display: grid;
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+}
+
+.card h3 {
+  color: #121214;
+  font-size: 2rem;
+  line-height: 140%;
+}
+
+.card p {
+  opacity: 0.75;
+}
+
+.card .location {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  opacity: 0.75;
+}
+
+.location i {
+  color: #e45858;
+  font-size: 2.4rem;
+  opacity: 1;
+}
+
+/* responsivo - milha extra */
+main {
+  padding-inline: 4rem;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 50%;
+  }
+
+  header::before {
+    background-size: 30vw;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 870px) {
+  header .content {
+    padding: 4rem;
+  }
+
+  header form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 660px) {
+  section.cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  section.cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    width: 100%;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+}
