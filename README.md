@@ -70,11 +70,17 @@
             <td>08/02/23</td>
             <td align="center"><a href="05"><img width="300px" src="05/.github/preview.jpg" /></a></td>
         </tr>
-         <tr>
+        <tr>
             <td>06</td>
             <td><a href="06">Cartão de embarque</a></td>
             <td>15/02/23</td>
             <td align="center" ><a href="06"><img width="300px" src="06/.github/preview.jpg" /></a></td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td><a href="07">Site para encontrar seu bloco no carnaval</a></td>
+            <td>22/02/23</td>
+            <td align="center" ><a href="07"><img width="300px" src="07/.github/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
