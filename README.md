@@ -1,54 +1,67 @@
 # #boraCodar
 
-Projetos #boraCodar da Rocketseat
+<p align="center">
+    Projetos #boraCodar da Rocketseat <br>
+    <a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui</a>
+</p>
 
-[acesse o desafio da semana clicando aqui](https://boracodar.dev)
-
-<table>
+<table width="100%">
     <thead>
         <tr>
             <th>#</th>
             <th>name</th>
             <th>date</th>
-            <th>view</th>
+            <th style="text-align: center">view</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>01</td>
-            <td>Music Player</td>
+            <td><a href="01">Music Player </a></td>
             <td>11/01/23</td>
-            <td><a href="01">🔗</a></td>
+            <td
+            style="text-align: center"
+            ><a href="01"><img width="200px" src="01/.github/preview.jpg" /></a></td>
         </tr>
         <tr>
             <td>02</td>
-            <td>Product Card</td>
+            <td><a href="02">Product Card</a></td>
             <td>18/01/23</td>
-            <td><a href="02">🔗</a></td>
+            <td
+            style="text-align: center"
+            ><a href="02"><img width="200px" src="02/.github/preview.jpg" /></a></td>
         </tr>
         <tr>
             <td>03</td>
-            <td>Botões e Cursores</td>
+            <td><a href="03">Botões e Cursores</a></td>
             <td>25/01/23</td>
-            <td><a href="03">🔗</a></td>
+            <td
+            style="text-align: center"
+            ><a href="03"><img width="200px" src="03/.github/preview.jpg" /></a></td>
         </tr>
         <tr>
             <td>04</td>
-            <td>Chat</td>
+            <td><a href="04">Chat</a></td>
             <td>01/02/23</td>
-            <td><a href="04">🔗</a></td>
+            <td
+            style="text-align: center"
+            ><a href="04"><img width="200px" src="04/.github/preview.jpg" /></a></td>
         </tr>
         <tr>
             <td>05</td>
-            <td>Calculadora</td>
+            <td><a href="05">Calculadora</a></td>
             <td>08/02/23</td>
-            <td><a href="05">🔗</a></td>
+            <td
+            style="text-align: center"
+            ><a href="05"><img width="200px" src="05/.github/preview.jpg" /></a></td>
         </tr>
          <tr>
             <td>06</td>
-            <td>Cartão de embarque</td>
+            <td><a href="06">Cartão de embarque</a></td>
             <td>15/02/23</td>
-            <td><a href="06">🔗</a></td>
+            <td
+            style="text-align: center"
+            ><a href="06"><img width="200px" src="06/.github/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table>
