@@ -82,5 +82,11 @@
             <td>22/02/23</td>
             <td align="center" ><a href="07"><img width="300px" src="07/.github/preview.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>08</td>
+            <td><a href="08">Dashboard</a></td>
+            <td>01/03/23</td>
+            <td align="center" ><a href="08"><img width="300px" src="08/.github/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
