@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --text-color: #0f172a;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #f8fafc;
+
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+  color: var(--text-color);
+}
+
+main {
+  padding: 6.4rem 8rem;
+  background: #ffffff;
+  box-shadow: 0rem 0.4rem 3.2rem rgba(15, 23, 42, 0.15);
+  border-radius: 1.6rem;
+
+  display: grid;
+  gap: 6.4rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.conversor .wrapper {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* MONEY-WRAPPER */
+.money-wrapper {
+  background-color: white;
+  outline: 0.1rem solid #94a3b8;
+
+  width: 27rem;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.money-wrapper:hover,
+.money-wrapper:has(:focus) {
+  outline: 0.25rem solid #7c3aed;
+}
+
+/* AMOUNT */
+.amount {
+  border: 0;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  color: var(--text-color);
+  width: 50%;
+}
+
+.amount:focus {
+  outline: 0;
+}
+
+/* DROPDOWN */
+.dropdown {
+  --bg-hover: #ede9fe;
+  width: 13rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 5.6rem;
+  overflow: hidden;
+}
+
+.dropdown:hover {
+  height: fit-content;
+  overflow: initial;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  border-radius: 0 0.8rem 0.8rem 0;
+
+  padding: 1.6rem;
+
+  cursor: pointer;
+}
+
+.selected::before {
+  content: "";
+  height: 2.4rem;
+  width: 0.1rem;
+  background-color: #94a3b8;
+  position: absolute;
+  left: 0;
+}
+.selected::after {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(./assets/chevron-down.svg) no-repeat;
+}
+
+li:hover,
+.selected:hover {
+  background-color: var(--bg-hover);
+}
+
+.fi.fis {
+  font-size: 2.4rem;
+  border-radius: 50%;
+}
+
+/*  UL */
+ul {
+  list-style: none;
+
+  background-color: white;
+  box-shadow: 0px 4px 16px rgba(15, 23, 42, 0.15);
+  border-radius: 8px;
+
+  padding: 0;
+
+  width: 16rem;
+  max-height: 17rem;
+
+  margin-top: 0.8rem;
+
+  overflow-y: scroll;
+
+  position: relative;
+  z-index: 1;
+}
+
+li {
+  padding: 1.2rem 1.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  cursor: pointer;
+}
+
+/* CAMBIO */
+
+.cambio .wrapper {
+  margin-top: 2.4rem;
+}
+
+.tooltip {
+  background-color: white;
+  box-shadow: 0 .4rem 1.6rem rgb(15 23 42 / .15);
+  border-radius: .4rem;
+  padding: .8rem;
+}
+
+
+.chart-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: -2.2rem .8rem 0 4rem;
+}
+
+.chart-controls button {
+  background-color: transparent;
+  border: 0;
+
+  width: 4rem;
+  height: 2.4rem;
+
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.chart-controls button:hover,
+.chart-controls button.active {
+  background-color: #7c3aed;
+  color: white;
+  border-radius: 999px;
+  padding: .4rem .8rem;
+}
+
+@media (max-width: 48rem) {
+  main {
+    padding: 1.6rem;
+    gap: 3.2rem
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .conversor .wrapper {
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  .money-wrapper {
+    width: 100%;
+  }
+}
