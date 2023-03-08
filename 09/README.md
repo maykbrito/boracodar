@@ -31,12 +31,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 📚 Um poudo do que vimos nesse desafio
 
-- outline x border
-- Hover select
-- Ícones com bandeiras
-- Gráfico de area
+- `outline` x `border` CSS property
+- Custom `<select>`
+- Ícones com bandeiras `flag icons`
+- Gráfico de area `area chart`
 - Configuração do Apex Charts
-- String() e replace()
+- `String()` e `.replace()`
 - muito mais...
 
 ## 🔖 Layout
