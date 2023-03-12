@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de clima</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="temperature-now">
+        <div class="location">
+          <img src="./assets/pin.svg" alt="icone de localizacao" />
+          <strong>Rio do Sul, SC</strong>
+        </div>
+        <div class="temp">
+          <div class="number">
+            18
+            <div class="maxmin">22° <span>16° </span></div>
+          </div>
+          <div class="celsius">°C</div>
+        </div>
+        <div class="statistics">
+          <div class="stats">
+            <img src="./assets/temp-wind.svg" alt="icone de vento" />
+            <div class="info">
+              <p>Vento</p>
+              <h5>17 <span>km/h</span></h5>
+            </div>
+          </div>
+          <div class="stats">
+            <img src="./assets/temp-humidity.svg" alt="icone de umidade" />
+            <div class="info">
+              <p>Umidade</p>
+              <h5>31 <span>%</span></h5>
+            </div>
+          </div>
+          <div class="stats">
+            <img src="./assets/temp-rain.svg" alt="icone de chuva" />
+            <div class="info">
+              <p>Chuva</p>
+              <h5>10 <span>%</span></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="air-quality">
+        <h2 class="title">
+          <img src="./assets/leaf.svg" alt="icone de folha de árvore" />
+          Qualidade do ar
+        </h2>
+
+        <p class="good">Boa</p>
+        <p class="number">21</p>
+
+        <div class="info">
+          <div class="number">
+            <p>12.9</p>
+            <small>PM2.5</small>
+          </div>
+          <div class="number">
+            <p>12.9</p>
+            <small>PM10</small>
+          </div>
+          <div class="number">
+            <p>2.1</p>
+            <small>SO₂</small>
+          </div>
+          <div class="number">
+            <p>1.4</p>
+            <small>NO₂</small>
+          </div>
+          <div class="number">
+            <p>21.2</p>
+            <small>O₃</small>
+          </div>
+          <div class="number">
+            <p>0.7</p>
+            <small>CO</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="sun-time">
+        <h2 class="title">
+          <img
+            src="./assets/sun-time.svg"
+            alt="icone de um sol com um relógio dentro"
+          />
+          Horário do sol
+        </h2>
+        <div class="sun-chart-wrapper">
+          <div class="sun-chart">
+            <div class="chart">
+              <img
+                src="./assets/sun-chart.svg"
+                alt="imagem de um gráfico semi circulo com traços"
+              />
+            </div>
+            <time class="now">17:48</time>
+          </div>
+        </div>
+        <div class="time">
+          <time class="sunrise">06:00</time>
+          <time class="sunset">18:52</time>
+        </div>
+      </section>
+
+      <section class="week-weather">
+        <div class="day">
+          <h4 class="title">Amanhã</h4>
+          <img src="./assets/weather-clouds.svg" alt="" />
+          <p class="maxmin">21° <span>16°</span></p>
+        </div>
+
+        <div class="day">
+          <h4 class="title">Sexta</h4>
+          <img src="./assets/weather-sun.svg" alt="" />
+          <p class="maxmin">28° <span>16°</span></p>
+        </div>
+
+        <div class="day">
+          <h4 class="title">Sábado</h4>
+          <img src="./assets/weather-rain.svg" alt="" />
+          <p class="maxmin">20° <span>16°</span></p>
+        </div>
+
+        <div class="day">
+          <h4 class="title">Domingo</h4>
+          <img src="./assets/weather-thunder.svg" alt="" />
+          <p class="maxmin">28° <span>26°</span></p>
+        </div>
+
+        <div class="day">
+          <h4 class="title">Segunda</h4>
+          <img src="./assets/weather-cloudy.svg" alt="" />
+          <p class="maxmin">26° <span>20°</span></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
