@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#page {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+#page > * {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header img {
+  width: 16rem;
+  height: 5.4rem;
+}
+
+#page > div {
+  padding: 4rem 11.2rem;
+}
+
+main {
+  margin-top: 11.4rem;
+  max-width: 38.4rem;
+}
+
+.headline {
+  max-width: 35rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 5.5rem;
+  color: #1e293b;
+}
+
+h1 + p {
+  color: #475569;
+  margin-top: 1.6rem;
+}
+
+form {
+  margin-top: 4rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #1e293b;
+}
+
+.label-wrapper {
+  justify-content: space-between;
+}
+
+.label-wrapper label + a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input {
+  width: 100%;
+
+  background: #ffffff;
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 0.4rem;
+
+  padding: 1.6rem 1.2rem;
+
+  margin-top: 0.8rem;
+
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  color: #1e293b;
+}
+
+input:focus,
+input:hover {
+  border: 0.1rem solid #7c3aed;
+  outline: 0;
+}
+
+input:disabled {
+  opacity: 0.35;
+}
+
+::-ms-reveal {
+  display: none;
+}
+
+.eye {
+  width: 2rem;
+  height: 2rem;
+
+  position: absolute;
+  top: 55%;
+  right: 5%;
+}
+
+.hide {
+  display: none;
+}
+
+form button {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+
+  background: #7c3aed;
+  border-radius: 0.4rem;
+
+  width: 100%;
+
+  font-weight: bold;
+  color: #ffffff;
+
+  margin-block: 3.2rem;
+}
+
+form button:focus {
+  outline: 0.2rem solid black;
+  border-radius: 0.2rem;
+}
+
+form button:hover {
+  background: #9f67ff;
+}
+
+.create-account {
+  color: #475569;
+}
+
+@media (max-width: 900px) {
+  #page > * {
+    width: 100%;
+  }
+  #page > img {
+    display: none;
+  }
+
+  #page > div {
+    padding: 11rem;
+  }
+
+  main {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #page > div {
+    padding: 4rem;
+  }
+}
