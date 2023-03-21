@@ -27,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - Figma
 
-## 📚 Um poudo do que vimos nesse desafio
+## 📚 Um pouco do que vimos nesse desafio
 
 - grid-column, grid-row e as linhas virtuais do Grid
 - responsividade
