@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%; /*10px*/
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #7c3aed;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  min-height: 100vh;
+}
+
+main .inner {
+  height: 100%;
+  background-color: #fbfaff;
+  border-top-left-radius: 3.2rem;
+
+  padding: 4.8rem 3.2rem;
+}
+
+main {
+  padding-top: 0.8rem;
+}
+
+nav {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+ul {
+  margin-top: 6rem;
+
+  list-style: none;
+
+  display: grid;
+  gap: 3.6rem;
+
+  min-width: 11.5rem;
+}
+
+li a {
+  color: #cab3ff;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  font-weight: 500;
+}
+
+a.active,
+a:hover {
+  color: white;
+  font-weight: 700;
+}
+
+a ion-icon {
+  font-size: 2rem;
+}
+
+/* Section Title + Avatar */
+section.title-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.1rem 2.4rem;
+}
+
+.title-avatar > img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  font-size: 3.2rem;
+  color: #403937;
+}
+
+/* Section Filter */
+section.filter {
+  margin-top: 3.2rem;
+  padding: 0 2.4rem;
+
+  display: flex;
+  gap: 1.2rem;
+}
+
+.filter button {
+  padding: 1.2rem 3.2rem;
+  border: 0;
+  background: #7c3aed;
+  border-radius: 0.5rem;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.filter button span {
+  text-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.1);
+
+  font-size: 1.4rem;
+}
+
+.filter button ion-icon {
+  font-size: 2.4rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background: #ffffff;
+  border: 0.07rem solid #e3e3e3;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.1);
+  border-radius: 0.8rem;
+  padding: 0 2.4rem;
+
+  flex: 1;
+}
+
+.input-wrapper ion-icon {
+  font-size: 2.4rem;
+  color: #505059;
+}
+
+.input-wrapper input {
+  border: 0;
+  width: 100%;
+  outline: 0;
+}
+
+.input-wrapper:has(:focus) {
+  outline: 0.2rem black solid;
+}
+
+.input-wrapper input::placeholder {
+  font-size: 1.6rem;
+  color: #7c7c8a;
+}
+
+/* Section Kanban */
+section.kanban {
+  display: flex;
+  gap: 4.8rem;
+  padding-top: 3.2rem;
+}
+
+section.kanban > * {
+  flex: 1;
+  padding: 2.4rem;
+}
+
+section.kanban h2 {
+  font-size: 2rem;
+  color: #403937;
+  padding: 2.4rem 0;
+}
+
+.card {
+  padding: 2.4rem;
+  background: #ffffff;
+  box-shadow: 0rem 0.4rem 1.6rem #eae2fd;
+  border-radius: 0.8rem;
+
+  line-height: 130%;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #403937;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  color: #756966;
+
+  margin-top: 1rem;
+}
+
+.card .tags {
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+.card .tags span {
+  font-size: 1.1rem;
+  line-height: 130%;
+  background: #E2D6FF;
+  border-radius: .8rem;
+  padding: .4rem .8rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}

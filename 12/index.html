@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanBan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <img src="./assets/logo.svg" alt="Logo do site" class="logo" />
+
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <ion-icon name="tablet-portrait"></ion-icon>
+              Boards
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="people"></ion-icon>
+              Equipes
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="document-text"></ion-icon>
+              Relatórios
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="cog"></ion-icon>
+              Ajustes
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="inner">
+          <section class="title-avatar">
+            <h1>Meu KanBan <img src="./assets/pencil.svg" alt="" /></h1>
+            <img src="https://github.com/maykbrito.png" alt="avatar" />
+          </section>
+
+          <section class="filter">
+            <button>
+              <ion-icon name="filter-outline"></ion-icon>
+              <span>Filtrar</span>
+            </button>
+            <div class="input-wrapper">
+              <ion-icon name="search-outline"></ion-icon>
+              <input
+                type="text"
+                placeholder="Busque por cards, assuntos ou responsáveis..."
+              />
+            </div>
+          </section>
+
+          <!-- section.kanban -->
+          <section class="kanban">
+            <div class="todo">
+              <h2>A fazer</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>#boraCodar um Kanban 🧑🏾‍💻</h3>
+                  <p>
+                    Novo desafio do #boraCodar da Rocketseat, onde é proposto
+                    construir um quadro de Kanban.
+                  </p>
+                  <div class="tags">
+                    <span>rocketseat</span>
+                    <span>desafio</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3>Manter a ofensiva 🔥</h3>
+                  <p>
+                    Manter minha atividade na plataforma da Rocketseat para não
+                    perder a ofensiva
+                  </p>
+                  <div class="tags">
+                    <span>rocketseat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="doing">
+              <h2>Fazendo</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>Conferir o novo desafio 🚀</h3>
+                  <p>
+                    Conferir o novo projeto do #boraCodar para fazê-lo da melhor
+                    maneira possível
+                  </p>
+                  <div class="tags">
+                    <span>rocketseat</span>
+                    <span>desafio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="done">
+              <h2>Feito</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>#boraCodar uma página de login 🧑‍💻</h3>
+                  <p>
+                    Novo desafio do #boraCodar da Rocketseat, onde é proposto
+                    construir uma página de login.
+                  </p>
+                  <div class="tags">
+                    <span>rocketseat</span>
+                    <span>desafio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
