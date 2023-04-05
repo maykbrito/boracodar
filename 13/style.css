@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: #1f2937;
+}
+
+body,
+input,
+button {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+form {
+  padding: 2.4rem;
+  max-width: 40rem;
+  margin: auto;
+}
+
+#credit-card {
+  width: 32.8rem;
+  height: 21.2rem;
+
+  perspective: 60rem;
+}
+
+#credit-card > div {
+  width: inherit;
+  height: inherit;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+#credit-card .front {
+  background: url(./assets/cc-front.png) no-repeat;
+  transform: rotateY(0);
+}
+
+#credit-card .back {
+  background: url(./assets/cc-back.png) no-repeat;
+  transform: rotateY(-180deg);
+  top: -5px;
+}
+
+#credit-card:active .front,
+#credit-card:hover .front {
+  transform: rotateY(180deg);
+}
+
+#credit-card:active .back,
+#credit-card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.flex {
+  display: flex;
+}
+
+.inputs {
+  margin-top: 4.8rem;
+
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #e5e7eb;
+
+  gap: 0.4rem;
+  align-items: center;
+}
+
+input {
+  margin-top: 0.4rem;
+
+  width: 100%;
+  font-family: "Source Sans Pro";
+
+  padding: 1.2rem;
+  border: 0.1rem solid #374151;
+
+  background: #111827;
+  border-radius: 0.4rem;
+
+  color: #f3f4f6;
+}
+
+input:focus {
+  border: 0.15rem solid #9333ea;
+  outline: 0.15rem solid #9333ea;
+}
+
+input:invalid:focus {
+  outline: 0.15rem solid #fb7185;
+  border: 0.15rem solid #fb7185;
+}
+
+input + .warning {
+  display: none;
+}
+
+input:invalid:focus + .warning {
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+  color: #fb7185;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.col-2 {
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.col-2 .input-wrapper:nth-child(2) {
+  flex-basis: 40%;
+}
+
+.help img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.info-security {
+  margin-top: 4.8rem;
+
+  justify-content: center;
+  gap: 0.8rem;
+
+  font-size: 1.4rem;
+  color: #e5e7eb;
+}
+
+button {
+  margin-top: 10rem;
+
+  border: 0;
+  padding: 1.6rem;
+  width: 100%;
+  background: #9333ea;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #f9fafb;
+
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #a855f7;
+}
