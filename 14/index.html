@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componente de Upload</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div id="app">
+      <section class="drag-files">
+        <i class="ph ph-cloud-arrow-up"></i>
+
+        <h3>Importe seus arquivos</h3>
+        <p>Arraste ou clique para fazer upload</p>
+
+        <input type="file" />
+      </section>
+      <section class="files">
+        <div class="box uploading">
+          <div class="icon">
+            <i class="ph-fill ph-file"></i>
+          </div>
+          <div class="info">
+            <div class="filename">Scann_158.pdf</div>
+            <div class="filesize">
+              <span>30 MB / </span>
+              <span>70 MB</span>
+            </div>
+            <div class="bar">
+              <progress value="46" max="100"></progress>
+              <span>46%</span>
+            </div>
+          </div>
+          <div class="action">
+            <i class="ph ph-x"></i>
+          </div>
+        </div>
+        <div class="box done">
+          <div class="icon">
+            <i class="ph-fill ph-file"></i>
+          </div>
+          <div class="info">
+            <div class="filename">README.md</div>
+            <div class="filesize">
+              <span>12 KB</span>
+            </div>
+            <div class="bar">
+              <progress value="100" max="100"></progress>
+              <span>100%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box error">
+          <div class="icon">
+            <i class="ph-fill ph-file"></i>
+          </div>
+          <div class="info">
+            <div class="filename">picture1.jpeg</div>
+            <div class="filesize">
+              <span>6.3 MB</span>
+            </div>
+            <div class="bar">
+              <progress value="0" max="100"></progress>
+              <span>Erro</span>
+            </div>
+          </div>
+          <div class="action">
+            <i class="ph ph-arrow-counter-clockwise"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

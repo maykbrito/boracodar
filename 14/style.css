@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #fbfaff;
+  min-height: 100vh;
+  font-family: "Inter";
+  line-height: 130%;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 440px;
+  width: 90%;
+  margin: auto;
+}
+
+.drag-files {
+  background: #f3f0ff;
+  border: 1px dashed #c1b2fa;
+  border-radius: 8px;
+
+  text-align: center;
+  padding: 28px 0 32px;
+
+  position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.drag-files i.ph {
+  font-size: 48px;
+  color: #7c3aed;
+}
+
+.drag-files h3 {
+  margin-top: 12px;
+
+  color: #7a5fec;
+  font-size: 16px;
+}
+
+.drag-files p {
+  font-size: 14px;
+  color: #746e82;
+}
+
+.drag-files.dragover {
+  background: #ebe6ff;
+}
+
+/* upload boxes */
+.files {
+  margin-top: 20px;
+
+  display: grid;
+  gap: 12px;
+}
+
+/* box */
+.box {
+  padding: 8px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 16px #eae2fd;
+  border-radius: 8px;
+
+  display: flex;
+  gap: 12px;
+
+  --icon-bg: #eee;
+  --icon-color: #aaa;
+  --progress-color: black;
+  --progress-text: #999;
+
+  position: relative;
+}
+
+/* icon */
+.box .icon {
+  background: var(--icon-bg);
+  border-radius: 4px;
+
+  padding: 16px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .icon i {
+  font-size: 24px;
+  color: var(--icon-color);
+}
+
+/* info */
+.box .info {
+  flex: 1;
+}
+
+.info .filename {
+  font-size: 14px;
+  font-weight: 700;
+  color: #575361;
+}
+
+.info .filesize {
+  color: #857e95;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* bar progress */
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  line-height: 0;
+  margin-top: 4px;
+}
+
+progress {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background: #e3e3ed;
+}
+
+progress::-webkit-progress-value {
+  background: var(--progress-color);
+}
+
+.bar span {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--progress-text);
+}
+
+/* action */
+.action {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  color: #794fed;
+
+  cursor: pointer;
+}
+
+/* colors */
+.uploading {
+  --icon-bg: #e9e3f8;
+  --icon-color: #ac96e4;
+  --progress-color: linear-gradient(
+    90deg,
+    rgba(58, 97, 237, 0.52) 0%,
+    #7c3aed 100%
+  );
+  --progress-text: #9892a6;
+}
+
+.done {
+  --icon-bg: #daf2d9;
+  --icon-color: #73b172;
+  --progress-color: #73b172;
+  --progress-text: #4e884d;
+}
+
+.error {
+  --icon-bg: #f2d9d9;
+  --icon-color: #e36363;
+  --progress-color: white;
+  --progress-text: #e36363;
+}
