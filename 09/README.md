@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Apex Charts](https://apexcharts.com/)
 - [Flag Icons](https://github.com/lipis/flag-icons)
 
-## 📚 Um poudo do que vimos nesse desafio
+## 📚 Um pouco do que vimos nesse desafio
 
 - `outline` x `border` CSS property
 - Custom `<select>`
