@@ -124,5 +124,11 @@
             <td>12/04/23</td>
             <td align="center" ><a href="14"><img width="300px" src="14/.github/preview.jpg" /></a></td>
         </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="15">Pricing Table</a></td>
+            <td>19/04/23</td>
+            <td align="center" ><a href="15"><img width="300px" src="15/.github/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
